@@ -1,0 +1,91 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  background: #D5205B;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  width: 389px;
+  height: 98px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: #FFF;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1190px;
+  padding: 0 15px;
+}
+
+.main {
+  background-color: #DFE7EF;
+  min-height: 100vh;
+  padding: 70px 0 49px 0;
+  position: relative;
+}
+
+.main__content {
+  position: relative;
+  z-index: 3;
+}
+
+.main__header {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 129.5%;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.main__title {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 129.5%;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px #D5205B;
+  text-shadow: 7px 5px 4px rgba(0, 0, 0, 0.06);
+  margin-top: 27px;
+}
+
+.main__description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.015em;
+  color: #000;
+  margin-top: 56px;
+}
+
+.main__btn {
+  margin-top: 129px;
+}
+
+.main__event {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 151.4%;
+  letter-spacing: 0.015em;
+  color: #000000;
+  margin-top: 83px;
+}
+
+.main__event span {
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 21px;
+}
+
+.main__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 856px;
+  z-index: 1;
+}
