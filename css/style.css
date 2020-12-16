@@ -24,6 +24,12 @@ body {
   color: #FFF;
 }
 
+.line {
+  width: 181px;
+  height: 1px;
+  background-color: #fff;
+}
+
 .container {
   margin: 0 auto;
   width: 1228px;
@@ -106,9 +112,6 @@ body {
 
 .for__line {
   position: absolute;
-  width: 181px;
-  height: 1px;
-  background-color: #fff;
   top: 146px;
   left: 0;
 }
@@ -139,6 +142,9 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   text-align: center;
   margin-top: 121px;
 }
@@ -166,4 +172,68 @@ body {
   line-height: 135%;
   text-align: center;
   color: #FFF;
+}
+
+.know {
+  background: #2E2E2E;
+  position: relative;
+  padding-bottom: 166px;
+}
+
+.know__snake {
+  position: absolute;
+  top: 20px;
+  left: 106px;
+}
+
+.know__line {
+  position: absolute;
+  top: 23px;
+  right: 0;
+}
+
+.know__title {
+  text-align: right;
+  margin-right: 105px;
+}
+
+.know__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.know__header {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 129.5%;
+  color: #FFF;
+  margin-top: 64px;
+  margin-left: 75px;
+}
+
+.know__list {
+  margin-top: 63px;
+  margin-left: 105px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 129.5%;
+  color: #FFFFFF;
+}
+
+.know__list-item {
+  margin-bottom: 24px;
+}
+
+.know__list-item:last-child {
+  margin-bottom: 86px;
+}
+
+.know__btn {
+  margin-left: 75px;
 }
