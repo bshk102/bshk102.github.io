@@ -31,9 +31,14 @@ body {
   background-color: #fff;
 }
 
+.snake {
+  z-index: 1;
+}
+
 .container {
   margin: 0 auto;
-  width: 1228px;
+  width: 1210px;
+  padding: 0 9px;
 }
 
 .main {
@@ -124,7 +129,6 @@ body {
   position: absolute;
   top: 146px;
   left: 186px;
-  z-index: 1;
 }
 
 .for__cards {
@@ -150,7 +154,7 @@ body {
 }
 
 .for__cards-item {
-  width: 310px;
+  width: 25.25%;
 }
 
 .for__cards-item__img {
@@ -183,6 +187,7 @@ body {
   position: absolute;
   top: 20px;
   left: 106px;
+  overflow: hidden;
 }
 
 .know__line {
@@ -194,6 +199,8 @@ body {
 .know__title {
   text-align: right;
   margin-right: 105px;
+  position: relative;
+  z-index: 2;
 }
 
 .know__block {
@@ -469,4 +476,13 @@ body {
 
 .footer__right {
   text-align: right;
+}
+
+@media (max-width: 1230px) {
+  .snake {
+    display: none;
+  }
+  .main {
+    text-align: center;
+  }
 }

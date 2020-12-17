@@ -33,9 +33,14 @@ body {
     background-color: #fff;
 }
 
+.snake {
+    z-index: 1;
+}
+
 .container {
     margin: 0 auto;
-    width: 1228px;
+    width: 1210px;
+    padding: 0 9px;
 }
 
 .main {
@@ -114,7 +119,6 @@ body {
         position: absolute;
         top: 146px;
         left: 186px;
-        z-index: 1;
     }
     &__cards {
         position: relative;
@@ -126,7 +130,7 @@ body {
         text-align: center;
         margin-top: 121px;
         &-item {
-            width: 310px;
+            width: 25.25%;
             &__img {
                 margin-bottom: 52px;
             }
@@ -156,6 +160,7 @@ body {
         position: absolute;
         top: 20px;
         left: 106px;
+        overflow: hidden;
     }
     &__line {
         position: absolute;
@@ -165,6 +170,8 @@ body {
     &__title {
         text-align: right;
         margin-right: 105px;
+        position: relative;
+        z-index: 2;
     }
     &__block {
         display: flex;
