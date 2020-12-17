@@ -239,6 +239,7 @@ body {
 
 .about {
   position: relative;
+  padding-bottom: 187px;
 }
 
 .about__line {
@@ -334,4 +335,138 @@ body {
 
 .about__text-block-item {
   margin-bottom: 26px;
+}
+
+.gifts {
+  position: relative;
+  padding-bottom: 23px;
+}
+
+.gifts__snake {
+  position: absolute;
+  top: 23.5px;
+  left: 300px;
+}
+
+.gifts__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFF;
+  margin-bottom: 111px;
+}
+
+.gifts__blocks {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gifts__text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFF;
+  margin-left: 103px;
+}
+
+.gifts__img {
+  margin-left: 122px;
+  margin-top: 70px;
+}
+
+.gifts__form {
+  padding: 0 75px;
+  width: 494px;
+  height: 491px;
+  background: #FFFFFF;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  text-align: center;
+}
+
+.gifts__form-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #655D5D;
+  margin-top: 64px;
+  margin-bottom: 47px;
+}
+
+.gifts__form-input {
+  width: 100%;
+  height: 46px;
+  background: #E5E5E5;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  padding: 17px;
+  margin-bottom: 8px;
+}
+
+.gifts__form-input:last-child {
+  margin-bottom: 0;
+}
+
+.gifts__form-btn {
+  width: 284px;
+  height: 58px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #F5EDED;
+  margin-top: 64px;
+}
+
+.gifts__form-warning {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 89%;
+  text-align: center;
+  color: #000000;
+  opacity: 0.4;
+  margin-top: 15px;
+}
+
+.footer {
+  background: #534E4E;
+  padding: 33px 0 28px 0;
+}
+
+.footer__text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 89%;
+  color: #FFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__text a {
+  color: #fff;
+}
+
+.footer__left {
+  text-align: left;
+}
+
+.footer__right {
+  text-align: right;
 }
