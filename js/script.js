@@ -26,3 +26,13 @@ if (clientwidth < 1440) {
     snake2.style.left = 106 - (1440 - clientwidth) / 2 + 'px'
     snake3.style.left = 300 - (1440 - clientwidth) / 2 + 'px'
 }
+
+const scrollingLinks = document.querySelectorAll('.scrolling')
+scrollingLinks.forEach(link => link.addEventListener('click', (e) => {
+    e.preventDefault()
+    const blockId = link.getAttribute('href')
+    document.querySelector(blockId).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
+}))

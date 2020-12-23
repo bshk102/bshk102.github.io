@@ -14,6 +14,18 @@ body {
   line-height: 29px;
   letter-spacing: 0.03em;
   color: #FFF;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #b61d50;
+}
+
+.btn:active {
+  top: 1px;
 }
 
 .title {
@@ -43,6 +55,7 @@ body {
 .main {
   background-color: #DFE7EF;
   min-height: 907px;
+  min-height: 100vh;
   padding: 70px 0 49px 0;
   position: relative;
 }

@@ -16,6 +16,14 @@ body {
     line-height: 29px;
     letter-spacing: 0.03em;
     color: #FFF;
+    position: relative;
+    transition: all 0.3s;
+    &:hover {
+        background: #b61d50;
+    }
+    &:active {
+        top: 1px;
+    }
 }
 
 .title {
@@ -45,6 +53,7 @@ body {
 .main {
     background-color: $background-color-main;
     min-height: 907px;
+    min-height: 100vh;
     padding: 70px 0 49px 0;
     position: relative;
     &__content {
