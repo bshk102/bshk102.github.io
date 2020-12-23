@@ -37,4 +37,10 @@ scrollingLinks.forEach(link => link.addEventListener('click', (e) => {
     })
 }))
 
-console.log(clientwidth);
+
+const form = document.getElementById('form')
+form.addEventListener('submit', formSend)
+
+async function formSend(e) {
+    e.preventDefault()
+}
