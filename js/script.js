@@ -43,4 +43,52 @@ form.addEventListener('submit', formSend)
 
 async function formSend(e) {
     e.preventDefault()
+    let error = validateForm(form)
+
+    let formData = new FormData(form)
+
+    if (error === 0) {
+        form.classList.add('sending')
+        // let response = await fetch('sendmail.php', {
+        //     method: 'POST',
+        //     body: formData
+        // })
+        // if (response.ok) {
+        //     let result = await response.json()
+        //     alert(result.message)
+        //     form.reset()
+        // } else {
+        //     alert('Ошибка')
+        // }
+    } else {
+        alert('Заполните все обязательные поля')
+    }
+}
+
+function validateForm(form) {
+    let error = 0
+    const inputs = document.querySelectorAll('input')
+
+    for (let i = 0; i < inputs.length; i++) {
+        const input = inputs[i]
+
+        input.classList.remove('error')
+
+        if (input.id === 'email') {
+            if (emailTest(input)) {
+                input.classList.add('error')
+                error++
+            }
+        } else {
+            if (input.value === '') {
+                input.classList.add('error')
+            }
+        }
+    }
+
+    return error
+}
+
+function emailTest(input) {
+    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
 }
