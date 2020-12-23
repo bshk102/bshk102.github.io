@@ -36,3 +36,5 @@ scrollingLinks.forEach(link => link.addEventListener('click', (e) => {
         block: 'start'
     })
 }))
+
+console.log(clientwidth);

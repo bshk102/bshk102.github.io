@@ -54,7 +54,6 @@ body {
 
 .main {
   background-color: #DFE7EF;
-  min-height: 907px;
   min-height: 100vh;
   padding: 70px 0 49px 0;
   position: relative;
@@ -496,5 +495,6 @@ body {
   }
   .main {
     text-align: center;
+    min-height: 907px;
   }
 }
