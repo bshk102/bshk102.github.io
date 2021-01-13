@@ -11,9 +11,9 @@
     $mail->IsHTML(true);
 
     //От кого письмо
-    $mail->setFrom('', '');
+    $mail->setFrom('punk77@mail.ru', 'PHPMailer');
     //Кому отправить
-    $mail->addAddress('');
+    $mail->addAddress('xartem.kx@gmail.com');
     //Тема письма
     $mail->Subject = 'Hello';
 
